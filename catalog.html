@@ -28,11 +28,11 @@
 
         <ul class="navigation-user">
           <li class="user-item">
-            <a class="icon-button" href="#">
+            <button class="icon-button" href="#">
               <span class="visually-hidden">
-                Поиск
+                Поиск гостиницы в седоне
               </span>
-            </a>
+            </button>
           </li>
           <li class="user-item">
             <!-- лайки или избранное?...кнопка или ссылка? -->
@@ -86,70 +86,69 @@
             </ul>
           </fieldset>
 
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Тип жилья:</legend>
-              <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="Hotel"  checked>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Тип жилья:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="Hotel" checked>
 
-                    Гостиница
-                  </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="Motel">
+                  Гостиница
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="Motel">
 
-                    Мотель
-                  </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="Apartments">
+                  Мотель
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="Apartments">
 
-                    Апартаменты
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
 
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-
-
-                  <label class="control">
-                    <input class="control-input" type="text" name="product-group" value="0">
-                    <span class="range-title">от</span>
-                  </label>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
 
 
-                  <label class="control">
-                    <input class="control-input" type="text" name="product-group" value="9000">
-                    <span class="range-title">до</span>
-                    </label>
-
-                    <div class="range-slider slider">
-                      <div class="slider-bar">
-                        <button class="slider-thumb" type="button">
-                          <span class="visually-hidden">ползунок минимальной цены</span>
-                        </button>
-                        <button class="slider-thumb" type="button">
-                          <span class="visually-hidden">ползунок максимальной цены</span>
-                        </button>
-                      </div>
-                    </div>
+            <label class="control">
+              <input class="control-input" type="text" name="product-group" value="0">
+              <span class="range-title">от</span>
+            </label>
 
 
+            <label class="control">
+              <input class="control-input" type="text" name="product-group" value="9000">
+              <span class="range-title">до</span>
+            </label>
 
-            </fieldset>
-            <button class="button-submit" type="submit">Применить</button>
-            <button class="button-reset" type="reset">Сбросить</button>
+            <div class="range-slider slider">
+              <div class="slider-bar">
+                <button class="slider-thumb" type="button">
+                  <span class="visually-hidden">ползунок минимальной цены</span>
+                </button>
+                <button class="slider-thumb" type="button">
+                  <span class="visually-hidden">ползунок максимальной цены</span>
+                </button>
+              </div>
+            </div>
+          </fieldset>
+
+          <button class="button-submit" type="submit">Применить</button>
+          <button class="button-reset" type="reset">Сбросить</button>
 
         </form>
 
 
 
       </section>
+
       <section class="catalog" data-test="catalog">
         <h2 class="visually-hidden">Результаты поиска</h2>
         <P class="catalog-title">Найдено гостиниц: 38</p>
@@ -158,15 +157,18 @@
           <option value="cheap" selected>Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <a href="#" class="button button-light">
+
+        <button class="button button-light" type="button">
           <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a class="button" href="#">
+        </button>
+
+        <button class="button" type="button">
           <span class="visually-hidden">На весь экран</span>
-        </a>
-        <a class="button" href="#">
+        </button>
+
+        <button class="button" type="button">
           <span class="visually-hidden"> Показать список</span>
-        </a>
+        </button>
 
         <h3 class="visually-hidden">Сортировка и отображение</h3>
 
@@ -308,7 +310,7 @@
 
 
       <address class="footer-phone">
-        <a  href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
 
 
