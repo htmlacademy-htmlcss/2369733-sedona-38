@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+.page-body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  color: #333;
+}
+
+/* navigation */
+.navigation-list{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  list-style: none;
+
+}
+
+.navigation-user{
+  list-style: none;
+}
+
+.navigation-link{
+  text-decoration: none;
+  color: #000;
+}
+
+/* button */
+.button{
+  color: #FFF;
+  background-color: #756157;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.subscribe-button{
+color: #FFF;
+background-color: #83B3D3;
+font-size: 20px;
+  line-height: 36px;
+}
+
+.favorites{
+background-color: #7DB54F;
+}
+
+
+/* hero */
+.hero{
+  background-image: url(/image/background/hero-1.jpg);
+  width: 1200px;
+  height: 485px;
+}
+
+.hero img{
+  display: block;
+margin: 0 auto;
+}
+
+/* advantages */
+.advantages-list{
+  list-style: none;
+}
+.hero-title{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.hero-text{
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.advantages-title{
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.primacy-title{
+  color: #fff;
+}
+
+
+.advantages-text{
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.primacy-active{
+  color: #fff;
+  background-color: #82B3D3;
+
+}
+.sedona-benefits,
+.primacy-list{
+  list-style: none;
+}
+
+/* search */
+.search-title{
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.search-text{
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/* subscribe */
+.subscribe{
+  background-image: url(../image/background/subscribe.jpg);
+  background-color: #82B3D3;
+  color: #FFF;
+}
+
+.subscribe-title{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.subscribe-text{
+  font-size: 22px;
+  line-height: 26px;
+}
+
+
+/* footer-phone */
+.footer-phone a {
+  text-decoration: none;
+  color: #000;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+}
