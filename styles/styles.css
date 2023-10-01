@@ -131,7 +131,8 @@ margin: 0 auto;
 
 /* subscribe */
 .subscribe{
-  background-image: url(../image/background/subscribe.jpg);
+  background: no-repeat url(../image/background/subscribe.jpg);
+
   background-color: #82B3D3;
   color: #FFF;
 }
