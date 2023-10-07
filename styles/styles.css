@@ -352,6 +352,11 @@ text-transform: uppercase;
 }
 
 /* pagination */
+
+.pagination{
+  display: flex;
+  list-style: none;
+}
 .pagination-link-active{
   background-color: transparent;
   color: #000;
