@@ -47,8 +47,8 @@
   border-radius: 4px;
   cursor: alias;
 
-  padding: 8px 50px;
-  box-sizing: border-box;
+
+
 }
 
 .button-color {
@@ -454,6 +454,13 @@ font-family: inherit;
 }
 
 /* catalog */
+.wrrap{
+  display: flex;
+  margin-left: 70px;
+  margin-right: 70px;
+
+}
+
 .catalog-title{
   font-size: 30px;
   font-weight: 700;
@@ -465,9 +472,25 @@ text-transform: uppercase;
   font-size: 18px;
   line-height: 21px;
   color: #333;
+  margin-left: auto;
+  margin-right: 70px;
 }
 
 /* product-card */
+.product-list{
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.product-card{
+  display: flex;
+  flex-direction: column;
+}
+
 .product-card-title{
   font-size: 24px;
   line-height: 28px;
