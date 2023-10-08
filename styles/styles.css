@@ -349,6 +349,11 @@ border-radius: 0%;
 
 /* catalog */
 /* filter */
+
+.breadcrumbs{
+  font-size: 16px;
+}
+
 .filter{
   background: no-repeat url(../image/background/filter.jpg);
   background-color: #82B3D3;
@@ -366,7 +371,6 @@ border-radius: 0%;
 .filter-form{
   display: grid;
   grid-template-columns: 200px 200px 1fr 224px;
-  justify-content: space-between;
   gap: 17px;
 }
 
@@ -399,15 +403,15 @@ margin: 0;
   margin-left: 94px;
 }
 
-.breadcrumbs{
-  font-size: 16px;
-}
+
 
 
 .catalog-filter-title{
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+
+  margin-bottom: 32px;
 }
 
 .control-input{
@@ -416,7 +420,19 @@ line-height: 24px;
 font-weight: 700;
 color:#000;
 font-family: inherit;
+
+
 }
+
+.filter-item{
+  margin-bottom: 16px;
+}
+
+.filter-item:last-child{
+  margin-bottom: 0;
+}
+
+
 
 
 
