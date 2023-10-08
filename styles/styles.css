@@ -166,6 +166,11 @@ margin: 0 auto;
   text-align: center;
 }
 
+.wrrapper{
+  width: 230px;
+  margin: 94px 85px;
+}
+
 .sedona-benefits{
   margin: 0;
   padding: 0;
@@ -213,9 +218,9 @@ margin: 0 auto;
   line-height: 28px;
   text-transform: uppercase;
 
-  margin-top: 102px;
+
   margin-bottom: 62px;
-  width: 400px;
+
 
 }
 
@@ -230,7 +235,6 @@ margin: 0 auto;
   text-align: center;
   width: 230px;
   margin: 0 auto;
-  margin-bottom: 102px;
 }
 
 .wrrapper-reverse{
@@ -250,6 +254,7 @@ margin: 0 auto;
 /* search */
 .search{
   text-align: center;
+  padding-bottom: 96px;
 }
 .search-title{
   color: #000;
@@ -257,11 +262,17 @@ margin: 0 auto;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+
+  margin: 0;
+  margin-top: 96px;
+  margin-bottom: 26px;
 }
 
 .search-text{
   font-size: 22px;
   line-height: 26px;
+ margin-bottom: 54px;
+
 
 }
 
@@ -273,6 +284,7 @@ margin: 0 auto;
 /* subscribe */
 .subscribe{
   text-align: center;
+  padding: 96px 258px 104px;
 }
 
 .subscribe-bg{
@@ -281,8 +293,6 @@ margin: 0 auto;
   color: #FFF;
   background-size: cover;
   text-align: center;
-
-
 }
 
 .subscribe-title{
@@ -295,15 +305,25 @@ margin: 0 auto;
 .subscribe-text{
   font-size: 22px;
   line-height: 26px;
-
-
 }
 
 .field-input{
   font-family: inherit;
   font-size: 18px;
   background-color: #f2f2f2;
+  width: 440px;
+  height: 52px;
+  border: none;
+ padding: 0;
+
 }
+
+.subscribe-button{
+margin-left: -5px;
+border-radius: 0%;
+
+}
+
 /* footer  */
 .main-footer{
   display: flex;
@@ -339,20 +359,50 @@ margin: 0 auto;
   padding: 35px 70px 70px;
 }
 
+.breadcrumbs{
+  display: flex;
+}
+
+.filter-form{
+  display: grid;
+  grid-template-columns: 200px 200px 1fr 224px;
+  justify-content: space-between;
+  gap: 17px;
+}
+
 .filter-list,
 .catalog-filter-list{
   list-style: none;
 }
 
+.filter-list{
+padding: 0;
+margin: 0;
+}
+
 .filter-title{
   font-size: 60px;
   line-height: 78px;
+
   margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-group{
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.filter-fieldset-coin{
+  margin-left: 94px;
 }
 
 .breadcrumbs{
   font-size: 16px;
 }
+
 
 .catalog-filter-title{
   font-size: 20px;
@@ -376,13 +426,15 @@ font-family: inherit;
 
 .button-submit {
   background-color: #82B3D3;
+  min-height: 48px;
+  margin-bottom: 16px;
 }
 
 .button-reset {
   font-size: 16px;
   color: #fff;
   background-color: transparent;
-  font-family: inherit;
+
 }
 
 /* catalog */

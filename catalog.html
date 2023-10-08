@@ -60,7 +60,7 @@
           </ul>
           <section class="section-filter" data-test=" filter">
           <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog-filter">
+            <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="filter-list">
                 <li class="filter-item">
@@ -85,7 +85,7 @@
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Тип жилья:</legend>
-              <ul class="catalog-filter-list">
+              <ul class="filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
                     <input class="control-input" type="radio" name="product-group" value="Hotel" checked>
@@ -106,7 +106,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group filter-fieldset-coin" >
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <label class="control">
                 <input class="control-input" type="text" name="product-group" value="0">
@@ -127,8 +127,10 @@
                 </div>
               </div>
             </fieldset>
-            <button class="button-submit button" type="submit">Применить</button>
-            <button class="button-reset button" type="reset">Сбросить</button>
+            <div class="filter-buttons">
+              <button class="button-submit button" type="submit">Применить</button>
+              <button class="button-reset button" type="reset">Сбросить</button>
+            </div>
           </form>
         </section>
       </div>
@@ -154,7 +156,6 @@
           </button>
           <h3 class="visually-hidden">Сортировка и отображение.</h3>
           <ul class="product-list">
-      <!-- Переделать сылки для каждого элемента -->
             <li class="product-card">
               <a class="product-card-link" href="#">
                 <img class="product-card-image" src="image/catalog/hotel-1.jpg" width="300" height="212" alt="">
