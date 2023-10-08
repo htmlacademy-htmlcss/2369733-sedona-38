@@ -215,6 +215,7 @@ margin: 0 auto;
 
   margin-top: 102px;
   margin-bottom: 62px;
+  width: 400px;
 
 }
 
@@ -227,6 +228,8 @@ margin: 0 auto;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  width: 230px;
+  margin: 0 auto;
   margin-bottom: 102px;
 }
 
