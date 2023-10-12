@@ -71,13 +71,12 @@ background-color: #7DB54F;
 
 .navigation{
   display: flex;
-  padding: 0 70px;
-  justify-content: space-between;
 }
 
-.logo{
+.logo img{
   position: relative;
   z-index: 1;
+  display: block;
   margin-bottom: -10px;
 }
 
@@ -86,18 +85,14 @@ background-color: #7DB54F;
   font-weight: 700;
   line-height: 24px;
   list-style: none;
-
-  margin: 0 30px;
-  padding: 0;
-
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-item {
   display: flex;
-  align-items: center;
 }
 
 .navigation-user{
@@ -105,21 +100,38 @@ background-color: #7DB54F;
   display: flex;
   flex-wrap: wrap;
   width: 340px;
-  align-items: center;
+  position: relative;
 }
 
 .navigation-link{
   text-decoration: none;
   color: #000;
-
   display: block;
-  padding: 16px;
+  padding: 22px 12px;
 }
 
-.icon-button .icon{
+.navigation-search .icon{
 text-decoration: none;
 background-color: #7DB54F;
 color: #fff;
+position: absolute;
+}
+
+.user-item{
+  cursor: pointer;
+}
+
+.navigation-search{
+  background-image: url(../image/decor/search.svg);
+  background-repeat: no-repeat;
+background-position: center;
+  }
+
+
+.navigation-favorites{
+background-image: url(../image/decor/favorites.svg);
+background-repeat: no-repeat;
+background-position: center;
 }
 
 
