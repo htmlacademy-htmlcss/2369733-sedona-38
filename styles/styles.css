@@ -14,6 +14,22 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+  background-color: #F2F2F2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 .page-body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -48,9 +64,10 @@
   border-radius: 4px;
   cursor: pointer;
 
-  box-sizing: border-box;
-  padding: 8px 15px;
+
+  padding: 8px 35px;
   display: inline-block;
+
 
 }
 
@@ -67,17 +84,22 @@ line-height: 36px;
 background-color: #7DB54F;
 }
 
-/* navigation */
+/* page-header */
+.page-header{
+padding: 0 70px;
+}
 
 .navigation{
   display: flex;
+  width: 1200px;
+
 }
 
 .logo img{
   position: relative;
   z-index: 1;
   display: block;
-  margin-bottom: -10px;
+  margin-bottom: -11px;
 }
 
 .navigation-list{
@@ -88,6 +110,8 @@ background-color: #7DB54F;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  margin-left: 30px;
+  margin-right: 292px;
   padding: 0;
 }
 
@@ -101,24 +125,17 @@ background-color: #7DB54F;
   flex-wrap: wrap;
   width: 340px;
   position: relative;
+  margin: 0;
+  padding: 0;
+
 }
 
 .navigation-link{
   text-decoration: none;
   color: #000;
   display: block;
-  padding: 22px 12px;
-}
+  padding: 20px 16px;
 
-.navigation-search .icon{
-text-decoration: none;
-background-color: #7DB54F;
-color: #fff;
-position: absolute;
-}
-
-.user-item{
-  cursor: pointer;
 }
 
 .navigation-search{
@@ -127,14 +144,35 @@ position: absolute;
 background-position: center;
   }
 
-
 .navigation-favorites{
-background-image: url(../image/decor/favorites.svg);
-background-repeat: no-repeat;
-background-position: center;
+  background-image: url(../image/decor/favorites.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin-left: 10px;
+  }
+
+
+.navigation-favorites .icon{
+  font-size: 10px;
+text-decoration: none;
+background-color: #7DB54F;
+color: #fff;
+position: absolute;
+border-radius: 50%;
+box-sizing: border-box;
+top: 11px;
+padding: 5px;
 }
 
+.user-item{
+  cursor: pointer;
+}
 
+.user-item-button{
+padding: 14px 0;
+padding-left: 26px;
+}
 
 /* hero */
 .hero{
@@ -213,8 +251,8 @@ margin: 0 auto;
   text-transform: uppercase;
 
   margin: 0;
- margin-bottom: 25px;
- margin-top: 70px;
+ padding-bottom: 25px;
+
 }
 
 .hero-text{
@@ -569,19 +607,4 @@ border: 1px solid #E6E6E6;
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-html {
-  height: 100%;
-  background-color: #F2F2F2;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-*::before,
-*::after {
-  box-sizing: border-box;
 }
