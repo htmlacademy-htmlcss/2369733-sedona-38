@@ -187,7 +187,7 @@ padding-left: 26px;
   padding-top: 50px;
   padding-bottom: 70px;
   box-sizing: border-box;
-  margin-bottom: 70px;
+  margin-bottom: 69px;
 }
 
 .hero::after{
@@ -206,14 +206,13 @@ margin: 0 auto;
 }
 
 /* advantages */
-.sedona-benefits .advantages-item:nth-child(3){
-  background:  rgba(131, 179, 211, 0.20);
-}
 
-.primacy-list .primacy-item:nth-child(1),
-.primacy-list .primacy-item:nth-child(3){
-  background: rgba(131, 179, 211, 0.12);
+.advantages-items{
+margin-bottom: 64px;
 }
+.advantages-items:last-child{
+  margin-bottom: 0;
+  }
 
 .advantages{
   text-align: center;
@@ -231,12 +230,17 @@ margin: 0 auto;
 .primacy-active{
   grid-column: 1 / 4;
   display: flex;
+
 }
 
 .advantages-list{
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.advantages-item{
+  padding: 80px 85px;
 }
 
 
@@ -250,7 +254,7 @@ margin: 0 auto;
   text-transform: uppercase;
 
   margin: 0;
- padding-bottom: 25px;
+margin-bottom:  25px;
 
 }
 
@@ -267,18 +271,32 @@ margin: 0 auto;
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
-
-
   margin-bottom: 62px;
-
-
 }
 
 .primacy-title{
   color: #fff;
 }
 
+.housing{
+background-image: url(../image/decor/Icon=home.svg);
+background-color:  rgba(131, 179, 211, 0.20);
+background-repeat: no-repeat;
+background-position: top;
+}
 
+.food{
+background-image: url(../image/decor/Icon=food.svg);
+background-repeat: no-repeat;
+background-position: top;
+}
+
+.souvenirs{
+background-image: url(../image/decor/Icon=souvenir.svg);
+background-color: rgba(131, 179, 211, 0.12);
+background-repeat: no-repeat;
+  background-position: top;
+}
 .advantages-text{
   font-size: 18px;
   line-height: 21px;
@@ -304,7 +322,8 @@ margin: 0 auto;
 /* search */
 .search{
   text-align: center;
-  padding-bottom: 96px;
+  padding: 96px 304px 96px;
+
 }
 .search-title{
   color: #000;
@@ -314,8 +333,8 @@ margin: 0 auto;
   text-transform: uppercase;
 
   margin: 0;
-  margin-top: 96px;
-  margin-bottom: 26px;
+
+ padding-bottom: 26px;
 }
 
 .search-text{
