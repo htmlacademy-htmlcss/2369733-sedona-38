@@ -440,6 +440,8 @@ padding: 8px 50px;
   list-style: none;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
+  width: 300px;
 }
 
 /* footer-phone */
@@ -452,7 +454,9 @@ padding: 8px 50px;
 
 }
 
-
+.footer-phone{
+  width: 335px;
+}
 
 .social-link{
   padding: 10px 14px;
