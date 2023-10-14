@@ -185,6 +185,8 @@ padding-left: 26px;
   width: 1200px;
   height: 485px;
   padding-top: 50px;
+  padding-bottom: 70px;
+  box-sizing: border-box;
   margin-bottom: 70px;
 }
 
@@ -217,10 +219,7 @@ margin: 0 auto;
   text-align: center;
 }
 
-.wrrapper{
-  width: 230px;
-  margin: 94px 85px;
-}
+
 
 .sedona-benefits{
   margin: 0;
