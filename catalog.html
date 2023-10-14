@@ -10,42 +10,45 @@
 
   <body class="page-body">
 
-      <header class="page-header" data-test="header">
-        <nav class="navigation">
-          <a class="logo" href="index.html">
-            <img src="image/logo.svg" width="140" height="70" alt="Логотип Седона">
-          </a>
-          <ul class="navigation-list">
-            <li class="navigation-item active">
-              <a class="navigation-link" href="index.html">Главная</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">О седоне</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
-            </li>
-          </ul>
-          <ul class="navigation-user">
-            <li class="user-item">
-              <button class="icon-button">
-                <span class="visually-hidden">
-                  Поиск гостиницы в седоне.
-                </span>
-              </button>
-            </li>
-            <li class="user-item">
-              <a class="icon-button" href="#">
-                <span class="visually-hidden">Избранное.</span>
-                <span class="icon">12</span>
-              </a>
-            </li>
-            <li class="user-item">
-              <a class="button button-color " href="#">Хочу сюда!</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+    <header class="page-header" data-test="header">
+      <nav class="navigation">
+        <a class="logo" href="#">
+          <img src="image/logo.svg" width="140" height="70" alt="Логотип Седона">
+        </a>
+        <ul class="navigation-list">
+          <li class="navigation-item active">
+            <a class="navigation-link">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+
+        <ul class="navigation-user">
+          <li class="user-item navigation-item">
+            <a class="navigation-search navigation-link">
+              <span class="visually-hidden">
+                Поиск гостиницы в седоне.
+              </span>
+            </a>
+          </li>
+          <li class="user-item  navigation-item">
+            <a class="navigation-favorites navigation-link" href="#">
+              <span class="visually-hidden">Избранное.</span>
+              <span class="icon">12</span>
+            </a>
+          </li>
+          <li class="user-item-button">
+            <a class="button button-color" href="#">Хочу сюда!</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </header>
 
       <main class="catalog-main main-container" data-test="main">
        <div class="filter">
