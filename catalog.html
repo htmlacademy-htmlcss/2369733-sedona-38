@@ -111,22 +111,30 @@
             </fieldset>
             <fieldset class="catalog-filter-group filter-fieldset-coin" >
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-              <label class="control">
-                <input class="control-input" type="text" name="product-group" value="0">
-                <span class="range-title">от</span>
-              </label>
-              <label class="control">
-                <input class="control-input" type="text" name="product-group" value="9000">
-                <span class="range-title">до</span>
-              </label>
-              <div class="range-slider slider">
-                <div class="slider-bar">
-                  <button class="slider-thumb" type="button">
-                    <span class="visually-hidden">ползунок минимальной цены.</span>
-                  </button>
-                  <button class="slider-thumb" type="button">
-                    <span class="visually-hidden">ползунок максимальной цены.</span>
-                  </button>
+
+              <div class="range">
+                <div class="range-fields">
+                <label class="control">
+                  <span class="range-title">от</span>
+                  <input class="range-input" type="number" name="price-from" value="0" min="0" max="10000" step="100" placeholder="0">
+
+                </label>
+                <label class="control">
+                  <span class="range-title">до</span>
+                  <input class="range-input" type="number" name="price-to" value="9000" min="0" max="10000" step="100" placeholder="10000">
+
+                </label>
+              </div>
+
+                <div class="range-slider slider">
+                  <div class="slider-bar">
+                    <button class="slider-thumb" type="button">
+                      <span class="visually-hidden">ползунок минимальной цены.</span>
+                    </button>
+                    <button class="slider-thumb" type="button">
+                      <span class="visually-hidden">ползунок максимальной цены.</span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </fieldset>
@@ -244,14 +252,9 @@
                 <p class="card-rate">Рейтинг: 5,0</p>
               </div>
               </li>
-
-
-
-
-
-
-            </ul>
+              </ul>
           </div>
+
           <ul class="pagination">
             <h3 class="visually-hidden">Список страниц</h3>
             <li class="pagination-item">
@@ -273,6 +276,7 @@
               <a class="pagination-link " href="#">10</a>
             </li>
           </ul>
+
         </section>
 
 
