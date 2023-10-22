@@ -517,9 +517,7 @@ img {
 
 .subscribe-button{
   padding: 17px 16px 14px;
-
   border-radius: 0 4px 4px 0;
-
   font-size: 20px;
 }
 
@@ -639,24 +637,42 @@ img {
 }
 
 .filter-buttons {
-  margin-left: 30px;
-  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 55px;
+  margin-left: 33px;
 }
 
 .button-submit {
-  background-color: #82B3D3;
-  min-height: 48px;
-  margin-bottom: 16px;
-  padding: 8px 20px;
+  min-height: 36px;
+  margin-bottom: 32px;
 }
 
 .button-reset {
   font-size: 16px;
   color: #fff;
   background-color: transparent;
-  padding: 8px 20px;
-
+  align-self: center;
+  padding: 8px 50px;
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  text-transform: uppercase;
+cursor: pointer;
 }
+
+.button-reset:hover{
+  opacity: 0.3;
+}
+
+.button-reset:active{
+ color:   rgba(255, 255, 255, 0.3)
+}
+
+.button-reset:focus{
+  outline: 3px solid #83b3d3;
+   outline-offset: -1px;
+ }
 
 .wrrap-button {
   display: flex;
@@ -667,7 +683,7 @@ img {
 .wrrap {
   width: 1060px;
   display: flex;
-  margin: 50px 70px 0;
+  padding:  50px 70px 0;
 
 }
 
@@ -786,6 +802,17 @@ img {
   margin-bottom: 0;
 }
 
+.button-success {
+  background-color: #7db54f;
+}
+
+.button-success:hover {
+  background-color: #6c9e42;
+}
+
+.button-success:active {
+  background-color: #6c9e42;
+}
 
 
 .star {
