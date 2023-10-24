@@ -828,15 +828,15 @@ cursor: pointer;
     object-fit: cover;
 }
 
-.product-card-link:hover + .card-img {
+.product-card-link:hover + .product-card-image{
   opacity: 0.6;
 }
 
-.product-card-link:active + .card-img {
+.product-card-link:active + .product-card-image {
   opacity: 0.3;
 }
 
-.product-card-link:focus:not(:active) + .card-img {
+.product-card-link:focus:not(:active) + .product-card-image{
   outline: 3px solid #83b3d3;
 }
 
