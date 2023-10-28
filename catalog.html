@@ -72,19 +72,22 @@
               <ul class="filter-list">
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" checked name="Swimming">
+                    <input class="control-input visually-hidden" type="checkbox" checked name="Swimming">
+                    <span class="control-mark"></span>
                     <span class="control-lead">Бассейн</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" checked name="Parking">
+                    <input class="control-input visually-hidden" type="checkbox" checked name="Parking">
+                    <span class="control-mark"></span>
                     <span class="control-lead">Парковка</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="Wi-Fi">
+                    <input class="control-input visually-hidden" type="checkbox" name="Wi-Fi">
+                    <span class="control-mark"></span>
                     <span class="control-lead">Wi-Fi</span>
                   </label>
                 </li>
@@ -95,19 +98,22 @@
               <ul class="filter-list">
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="Hotel" checked>
+                    <input class="control-input visually-hidden" type="radio" name="product-group" value="Hotel" checked>
+                    <span class="control-mark"></span>
                     <span class="control-lead">Гостиница</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="Motel">
+                    <input class="control-input visually-hidden" type="radio" name="product-group" value="Motel">
+                    <span class="control-mark"></span>
                     <span class="control-lead">Мотель</span>
                   </label>
                 </li>
                 <li class="filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="Apartments">
+                    <input class="control-input visually-hidden" type="radio" name="product-group" value="Apartments">
+                    <span class="control-mark"></span>
                     <span class="control-lead">Апартаменты</span>
                   </label>
                 </li>
@@ -118,29 +124,30 @@
 
               <div class="range">
                 <div class="range-fields">
-                  <label class="control">
+                  <label class="catalog-filter-label">
                     <span class="range-title">от</span>
-                    <input class="range-input" type="number" name="price-from" value="0" min="0" max="10000" step="100"
+                    <input class="range-input range-input-min" type="number" name="price-from"  min="0" max="9000" step="100"
                       placeholder="0">
 
                   </label>
-                  <label class="control">
+                  <label class="catalog-filter-label">
                     <span class="range-title">до</span>
-                    <input class="range-input" type="number" name="price-to" value="9000" min="0" max="10000" step="100"
-                      placeholder="10000">
+                    <input class="range-input range-input-max" type="number" name="price-to"   min="0" max="9000" step="100"
+                      placeholder="9000">
                   </label>
                 </div>
 
-                <div class="range-slider slider">
-                  <div class="slider-bar">
-                    <button class="slider-thumb" type="button">
+                <div class="range-scale scale">
+                  <div class="range-bar" style="left: 10px; width: 206px">
+                    <button class="range-thumb toggle-min" type="button" >
                       <span class="visually-hidden">ползунок минимальной цены.</span>
                     </button>
-                    <button class="slider-thumb" type="button">
+                    <button class="range-thumb toggle-max" type="button" >
                       <span class="visually-hidden">ползунок максимальной цены.</span>
                     </button>
                   </div>
                 </div>
+
               </div>
             </fieldset>
             <div class="filter-buttons">
@@ -277,19 +284,19 @@
             <a class="pagination-link pagination-link-active">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link " href="#">2</a>
+            <a class="pagination-link" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link " href="#">3</a>
+            <a class="pagination-link" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link " href="#">4</a>
+            <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link  pagination-link-end" href="#">...</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link " href="#">10</a>
+            <a class="pagination-link" href="#">10</a>
           </li>
         </ul>
 

@@ -550,7 +550,7 @@ padding-top: 63px;
   background-color: #82B3D3;
   color: #fff;
   background-size: cover;
-  padding: 35px 70px 68px;
+  padding: 35px 70px 70px;
 }
 
 
@@ -582,7 +582,7 @@ padding-top: 63px;
 .filter-form {
   display: grid;
   grid-template-columns: 200px 200px 1fr 224px;
-  gap: 17px;
+  gap: 20px;
 }
 
 .wrrap-card {
@@ -621,7 +621,7 @@ padding-top: 63px;
 }
 
 .filter-fieldset-coin {
-  margin-left: 94px;
+  margin-left: 71px;
 }
 
 
@@ -632,7 +632,7 @@ padding-top: 63px;
   font-weight: 700;
   line-height: 24px;
 
-  margin-bottom: 32px;
+  margin-bottom: 31px;
 }
 
 .control-input {
@@ -690,6 +690,193 @@ cursor: pointer;
   outline: 3px solid #83b3d3;
    outline-offset: -1px;
  }
+
+ /*filter-list*/
+
+ .control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  cursor: pointer;
+}
+
+.control:hover{
+  opacity: 0.6;
+}
+
+.control:active{
+  opacity: 0.3;
+}
+
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color:  rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  border: 2px solid  transparent;
+}
+
+.control:focus .control-mark {
+border: 3px solid #83B3D3  ;
+}
+
+.control-input:disabled + .control-mark {
+  border-color: #242424;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: 9px;
+  left: 6px;
+  width: 12px;
+  height: 2px;
+  background-color: rgba(63, 94, 114, 1);
+  content: "";
+}
+
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  transform: translateX(-3px) translateY(1px) rotate(45deg) ;
+  width: 7px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  transform: rotate(-45deg);
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  background-color: rgba(63, 94, 114, 1);
+  border-radius: 50%;
+  content: "";
+}
+
+.control-input:focus + .control-mark    {
+  outline: 3px solid #83B3D3;
+}
+
+ /*range*/
+ .range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+}
+
+.range-thumb {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.range-thumb:hover {
+  background-color: rgb(131, 179, 211);
+}
+
+.range-thumb:focus {
+  outline: 4px solid rgb(131, 179, 211);
+}
+
+
+.range-thumb:active{
+  outline: 3px solid rgb(131, 179, 211);
+}
+
+.toggle-min {
+  top: -9px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -9px;
+  right: -10px;
+}
+
+/* range-fields */
+.range{
+  width: 288px;
+}
+.range-fields{
+display: flex;
+gap: 1px;
+}
+
+.range-input {
+  width: 83px;
+  padding: 12px 40px 12px 20px;
+  font: inherit;
+  text-align: left;
+  border: none;
+  appearance: textfield;
+  font-weight: 700;
+}
+
+.range-input:hover{
+ outline: none;
+ background-color:  rgba(230, 230, 230, 1);
+ 
+}
+
+.range-input:focus:not(:active){
+  outline: 2px solid rgba(131, 179, 211, 1);
+ }
+
+.range-fields{
+  margin-bottom: 45px;
+}
+
+.range-input-min{
+  border-radius:  4px 0 0 4px;
+}
+
+.range-input-max{
+  border-radius:   0 4px 4px 0 ;
+}
+
+
+
+.catalog-filter-label{
+  position: relative;
+  display: flex;
+}
+
+.range-title{
+  position: absolute;
+  color: rgba(0, 0, 0, 1);
+  opacity: 0.3;
+  right: 20px;
+  top: 12px;
+}
+
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 
 
 
@@ -945,7 +1132,6 @@ cursor: pointer;
 .pagination-item {
   margin-right: 8px;
   margin-top: 15px;
-  background-color: #83B3D3;
   border-radius: 4px;
 }
 
