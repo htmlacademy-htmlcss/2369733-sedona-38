@@ -91,7 +91,7 @@ img {
 
 .button:focus:not(:active) {
   background-color: #68A2CA;
-  outline: none;
+
 }
 
 .button-secondary {
@@ -108,7 +108,7 @@ img {
 
 .button-secondary:focus:not(:active) {
   background-color: #615048;
-  outline: none;
+
 }
 
 .button-success {
@@ -173,7 +173,7 @@ img {
 
 .navigation-link[href]:focus{
   color: #333333d8;
-  outline: none;
+  outline-offset: -1px;
 }
 
 
@@ -226,7 +226,7 @@ img {
 
 .icon-button:focus {
   fill: #756257;
-  outline: none;
+  outline-offset: -1px;
 }
 
 .icon-button-counter {
@@ -548,7 +548,8 @@ margin-bottom: 20px;
   display: flex;
 }
 
-.field-input {
+.subscribe-input {
+  width: 100%;
   margin: 0;
   padding: 8px 20px;
 
@@ -560,11 +561,11 @@ margin-bottom: 20px;
   font-size: 18px;
 }
 
-.field-input:hover {
+.subscribe-input:hover {
   background-color: #e6e6e6;
 }
 
-.field-input:focus {
+.subscribe-input:focus {
   background-color: #e6e6e6;
   outline: 3px solid #83b3d3;
 }
@@ -996,7 +997,7 @@ margin-bottom: 20px;
 }
 
 .sorting-button:hover {
-  outline: 4px solid #000;
+  outline: 2px solid #000;
   outline-offset: -1px;
 }
 
@@ -1308,7 +1309,6 @@ margin-bottom: 20px;
 
 .footer-phone:focus:not(:active) {
   color: #756257;
-  outline: none;
 }
 
 .footer-developer {
@@ -1331,7 +1331,6 @@ margin-bottom: 20px;
 
 .footer-developer:focus:not(:active) {
   fill: #756257;
-  outline: none;
 }
 
 .footer-developer-image {
@@ -1363,7 +1362,6 @@ align-items: center;
 }
 
 .social-link:focus:not(:active) {
-  outline: none;
   fill: #68a2ca;
 }
 
