@@ -1,3 +1,11 @@
+/* stylelint-disable property-no-vendor-prefix */
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: > 2% and last 1 version
+*/
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -612,6 +620,9 @@ img {
 }
 
 .product-card-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   display: block;
   order: -1;
   width: 100%;
@@ -851,6 +862,7 @@ img {
   font: inherit;
   text-align: left;
   border: none;
+  -webkit-appearance: textfield;
   appearance: textfield;
   font-weight: 700;
 }
@@ -888,6 +900,7 @@ img {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -929,6 +942,7 @@ img {
   border-radius: 4px;
 
   /* скрывает стрелку */
+  -webkit-appearance: none;
   appearance: none;
   background-color: rgb(255 255 255);
   background-image: url("../image/decor/arrow.svg");
@@ -1034,6 +1048,9 @@ img {
 }
 
 .product-card-link {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: title;
   color: rgb(0 0 0);
   text-decoration: none;
@@ -1082,14 +1099,21 @@ img {
 }
 
 .button-more {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
   grid-area: button-more;
 }
 
 .button-bookmarks {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
   grid-area: button-bookmarks;
 }
 
 .card-rate {
+  -ms-grid-row: 9;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
   grid-area: rate;
   justify-self: end;
   min-width: 125px;
@@ -1104,6 +1128,8 @@ img {
 }
 
 .star {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
   grid-area: stars;
   align-self: start;
   width: 23px;
@@ -1200,7 +1226,7 @@ img {
 }
 
 .footer-phone {
-  padding: 17px;
+  padding: 18px 16px;
   padding-left: 45px;
   color: hsl(0, 0%, 0%);
   font-size: 40px;
@@ -1255,7 +1281,7 @@ img {
 
 .social-link {
   display: grid;
-  padding: 15px;
+  padding: 12px 8px 15px 19px;
   fill: #83b3d3;
   align-content: center;
 }
@@ -1588,6 +1614,7 @@ img {
 
 .modal-input-number::-webkit-outer-spin-button,
 .modal-input-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -1609,6 +1636,7 @@ img {
   text-align: center;
   line-height: 20px;
   padding: 14px 36px;
+  -webkit-appearance: none;
   appearance: none;
 }
 
