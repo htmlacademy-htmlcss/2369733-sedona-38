@@ -1274,7 +1274,7 @@ img {
 
 /* modal */
 .modal-container {
-  z-index: 1;
+  z-index: 5;
   position: fixed;
   display: none;
   width: 100%;
@@ -1358,7 +1358,8 @@ img {
   text-transform: uppercase;
   text-align: left;
   padding-right: 30px;
-  margin-bottom: 64px;
+  margin-bottom: 65px;
+  max-width: 610px;
 }
 
 .modal-form {
@@ -1407,11 +1408,11 @@ img {
 }
 
 .modal-label {
-  padding-right: 18px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   color: rgb(0 0 0);
+  max-width: 170px;
 }
 
 .modal-label-adults,
@@ -1423,26 +1424,6 @@ img {
   display: flex;
   justify-self: end;
   grid-column: 3 / 4;
-}
-
-.modal-label-children .modal-label {
-  padding-right: 0;
-}
-
-.modal-input-number {
-  text-align: center;
-  line-height: 20px;
-  padding: 14px 36px;
-  appearance: none;
-}
-
-.modal-number-wrapper {
-  position: relative;
-}
-
-.modal-number-wrapper:hover .modal-input-number,
-.modal-number-wrapper:focus-within .modal-input-number {
-  background-color: rgb(230 230 230);
 }
 
 .modal-btn-math {
@@ -1519,18 +1500,23 @@ img {
 .tooltip {
   position: relative;
   margin-top: -2px;
-  margin-left: 12px;
+  margin-right: 12px;
   width: 26px;
   height: 26px;
 }
 
 .tooltip-toggle {
+  position: absolute;
+  top: 1px;
+  right: -11px;
   border: none;
   background-color: transparent;
   padding: 0;
   margin: 0;
   display: block;
   cursor: pointer;
+  width: 26px;
+  height: 26px;
 }
 
 .tooltip-icon {
@@ -1543,7 +1529,7 @@ img {
   display: none;
   width: 216px;
   position: absolute;
-  top: 100%;
+  top: 103%;
   margin-top: 15px;
   padding: 21px 18px 23px 22px;
   color: rgb(255 255 255);
@@ -1553,7 +1539,7 @@ img {
   border-radius: 10px;
   background-color: rgb(51 51 51);
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-46%);
   z-index: 1;
 }
 
@@ -1617,4 +1603,20 @@ img {
 
 .button-light:active {
   color: rgb(255 255 255 / 30%);
+}
+
+.modal-input-number {
+  text-align: center;
+  line-height: 20px;
+  padding: 14px 36px;
+  appearance: none;
+}
+
+.modal-number-wrapper {
+  position: relative;
+}
+
+.modal-number-wrapper:hover .modal-input-number,
+.modal-number-wrapper:focus-within .modal-input-number {
+  background-color: rgb(230 230 230);
 }
