@@ -753,9 +753,9 @@ img {
 .control-input[type="checkbox"]:checked + .control-mark::before,
 .control-input[type="checkbox"]:checked + .control-mark::after {
   position: absolute;
-  top: 9px;
-  left: 6px;
-  width: 12px;
+  top: 7px;
+  left: 5px;
+  width: 10px;
   height: 2px;
   background-color: rgba(63, 94, 114, 1);
   content: "";
@@ -1139,7 +1139,7 @@ img {
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 21px 70px 58px 70px;
+  padding: 23px 70px 58px 70px;
   width: 1060px;
   flex-wrap: wrap;
 
