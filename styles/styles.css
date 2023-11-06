@@ -609,7 +609,7 @@ img {
 }
 
 .wrrap-card {
-  padding: 40px 71px 60px;
+  padding: 41px 70px 60px;
 }
 
 .filter-list,
@@ -901,8 +901,16 @@ img {
 /* catalog */
 .wrrap {
   width: 1060px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 160px;
+  gap: 72px;
   padding: 50px 70px 0;
+}
+
+.sorting-wrrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .catalog-title {
@@ -911,17 +919,16 @@ img {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 5px;
-  width: 350px;
+  margin-top: 6px;
 }
 
 .select-control {
+  max-height: 49px;
+  margin-left: auto;
   font-family: inherit;
   font-size: 18px;
   width: 290px;
   color: rgb(51, 51, 51);
-  margin-left: 195px;
-  margin-right: 67px;
   padding-left: 15px;
   cursor: pointer;
   border: 2px solid rgb(229, 229, 229);
@@ -932,7 +939,6 @@ img {
   background-image: url("../image/decor/arrow.svg");
   background-repeat: no-repeat;
   background-position: right 14px center;
-
 }
 
 .select-control:hover {
@@ -951,7 +957,6 @@ img {
   display: block;
   padding: 14px 12px;
   cursor: pointer;
-  margin-left: 8px;
   border-radius: 4px;
   border: 2px solid rgb(230, 230, 230);
   background-color: rgb(255, 255, 255);
@@ -1008,7 +1013,7 @@ img {
 .product-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 22px 18px;
+  gap: 20px 20px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1020,14 +1025,14 @@ img {
   display: grid;
   align-content: start;
   grid-template-columns: 1fr 20px 140px;
-  grid-template-rows: 214px 1fr;
+  grid-template-rows: 212px 1fr;
   grid-template-areas:
     "image image image"
     "title title title"
     "description description description"
     "button-more . button-bookmarks"
     "stars rate rate";
-  row-gap: 15px;
+  row-gap: 16px;
   padding: 19px;
   border-radius: 4px;
   border: 1px solid rgb(230, 230, 230);
@@ -1112,11 +1117,10 @@ img {
   align-self: start;
   width: 23px;
   margin: 0;
-  min-height: 37px;
-
+  min-height: 36px;
   background-repeat: repeat-x;
-  background-position: 0 70%;
-  background-size: 23px 17px;
+  background-position: -3px 58%;
+  background-size: 24px 18px;
   background-image: url("../image/decor/stars.svg");
 }
 
@@ -1141,7 +1145,7 @@ img {
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 23px 70px 58px 70px;
+  padding: 20px 70px 60px 70px;
   width: 1060px;
   flex-wrap: wrap;
 
@@ -1214,6 +1218,7 @@ img {
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
+  max-width: 500px;
 }
 
 .footer-phone:hover {
