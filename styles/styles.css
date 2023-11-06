@@ -1164,39 +1164,25 @@ img {
   text-decoration: none;
 }
 
-.pagination-link:hover {
+.pagination-link-end {
+  background-color: inherit;
+  color: rgb(0, 0, 0);
+}
+
+.pagination-link:hover:not(.pagination-link-end):not(.pagination-link-active) {
   background-color: rgb(105, 163, 201);
 }
 
-.pagination-link:active {
+.pagination-link:active:not(.pagination-link-end):not(.pagination-link-active) {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.pagination-link:focus {
+.pagination-link:focus:not(.pagination-link-end):not(.pagination-link-active) {
   outline: 1px solid rgb(130, 179, 211);
   background-color: rgb(104, 163, 202);
 }
 
-.pagination-link-active,
-.pagination-link-end {
-  background-color: rgb(242, 242, 242);
-  color: rgb(0, 0, 0);
-}
-
-.pagination-link-active:hover,
-.pagination-link-end:hover {
-  background-color: rgb(242, 242, 242);
-  color: rgb(0, 0, 0);
-}
-
-.pagination-link-active:active,
-.pagination-link-end:active {
-  background-color: rgb(242, 242, 242);
-  color: rgb(0, 0, 0);
-}
-
-.pagination-link-active:focus,
-.pagination-link-end:focus {
+.pagination-link-active {
   background-color: rgb(242, 242, 242);
   color: rgb(0, 0, 0);
 }
