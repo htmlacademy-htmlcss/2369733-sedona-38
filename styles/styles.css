@@ -182,10 +182,11 @@ img {
   content: "";
   position: absolute;
   right: 17px;
-  left: 17px;
-  bottom: 0;
-  height: 3px;
+  left: 14px;
+  bottom: -1px;
+  height: 2px;
   background-color: #756257;
+  z-index: 2;
 }
 
 .additional-menu {
@@ -249,7 +250,7 @@ img {
   position: relative;
   width: 1200px;
   height: 485px;
-  padding-top: 50px;
+  padding-top: 51px;
   padding-bottom: 70px;
   box-sizing: border-box;
 }
@@ -285,12 +286,12 @@ img {
 
 .advantages-item {
   position: relative;
-  padding: 103px 85px 102px;
+  padding: 103px 85px 101px;
 }
 
 .primacy-item {
   position: relative;
-  padding: 181px 85px 82px;
+  padding: 183px 85px 81px;
 }
 
 .advantages-li:nth-child(3) {
@@ -334,7 +335,7 @@ img {
 
 .advantages-li {
   position: relative;
-  padding: 112px 85px;
+  padding: 113px 85px 112px;
 }
 
 .hero-title {
@@ -494,7 +495,7 @@ img {
 /* subscribe */
 .subscribe {
   text-align: center;
-  padding: 98px 258px 105px;
+  padding: 96px 258px 105px;
 }
 
 .subscribe-bg {
@@ -517,7 +518,7 @@ img {
   font-size: 22px;
   line-height: 26px;
   margin: 0;
-  margin-bottom: 54px;
+  margin-bottom: 55px;
 }
 
 .subscribe-form {
@@ -923,14 +924,15 @@ img {
   margin-right: 67px;
   padding-left: 15px;
   cursor: pointer;
-  border-color: rgb(229, 229, 229);
+  border: 2px solid rgb(229, 229, 229);
   border-radius: 4px;
-
-  background-image: url("/image/decor/arrow.svg");
-  background-repeat: no-repeat;
-  background-position: right 15px center;
   /* скрывает стрелку */
   appearance: none;
+  background-color: rgb(255, 255, 255);
+  background-image: url("../image/decor/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+
 }
 
 .select-control:hover {
