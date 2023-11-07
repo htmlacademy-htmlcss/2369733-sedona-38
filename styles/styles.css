@@ -138,6 +138,8 @@ img {
   z-index: 1;
   display: block;
   margin-bottom: -11px;
+  width: 140px;
+  height: 70px;
 }
 
 .navigation {
@@ -1310,7 +1312,7 @@ img {
   background-color: rgb(242 242 242 / 80%);
 }
 
-.modal-container-opened {
+.modal-opened {
   display: flex;
 }
 
@@ -1505,10 +1507,6 @@ img {
 .modal-btn-math:active .sign {
   opacity: 0.2;
   box-shadow: none;
-}
-
-.modal-btn-minus {
-  left: 0;
 }
 
 .modal-btn-plus {
