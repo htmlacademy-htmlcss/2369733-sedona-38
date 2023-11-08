@@ -214,11 +214,9 @@ img {
   position: relative;
   display: grid;
   place-content: center;
-  width: 42px;
-  height: 42px;
+  width: 43px;
+  height: 64px;
   fill: rgb(0 0 0);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .icon-button:hover {
@@ -236,13 +234,13 @@ img {
 
 .icon-button-counter {
   position: absolute;
-  top: 0;
+  top: 10px ;
   right: 3px;
   min-width: 20px;
   min-height: 20px;
   color: rgb(255 255 255);
   background-color: rgb(125 181 79);
-  border-radius: 50%;
+  border-radius: 10px;
   line-height: 20px;
   font-size: 10px;
   text-align: center;
