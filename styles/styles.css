@@ -671,6 +671,8 @@ img {
 }
 
 .filter-item {
+  display: grid;
+  grid-template-columns: 100px 100px;
   margin-bottom: 16px;
 }
 
@@ -736,7 +738,6 @@ img {
 .control:active {
   opacity: 0.3;
 }
-
 
 .control-mark {
   position: absolute;
