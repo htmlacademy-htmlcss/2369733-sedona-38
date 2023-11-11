@@ -87,25 +87,25 @@ img {
 }
 
 .button:hover {
-  background-color: rgb(105 163 201);
+  background-color: #69a3c9;
 }
 
 .button:disabled {
-  color: rgb(255 255 255 / 100%);
-  background-color: rgb(230 230 230);
+  color: #ffffff;
+  background-color: #e6e6e6;
 }
 
 .button:active {
-  color: rgb(255 255 255 / 30%);
-  background-color: rgb(104 163 202);
+  color: #ffffff4d;
+  background-color: #68a3ca;
 }
 
 .button:focus:not(:active) {
-  background-color: rgb(104 163 202);
+  background-color: #68a3ca;
 }
 
 .button-secondary {
-  background-color: rgb(117 98 87);
+  background-color: #756257;
 }
 
 .button-secondary:hover {
