@@ -24,7 +24,6 @@
 
 html {
   height: 100%;
-  background-color: rgb(242 242 242);
 }
 
 img {
@@ -54,8 +53,8 @@ img {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  color: rgb(0 0 0);
-  background-color: rgb(255 255 255);
+  color: #333333;
+  background-color: #f2f2f2;
   box-shadow: 0 0 15px 0 rgb(0 0 0 / 20%);
   display: flex;
   flex-direction: column;
@@ -74,8 +73,8 @@ img {
   font-size: 16px;
   font-weight: 700;
   text-align: center;
-  color: rgb(255 255 255);
-  background-color: rgb(130, 179, 211);
+  color: #ffffff;
+  background-color: #82b3d3;
   border: none;
   text-transform: uppercase;
   text-decoration: none;
@@ -163,7 +162,7 @@ img {
 
 .navigation-link {
   text-decoration: none;
-  color: rgb(0 0 0);
+  color: rgba(0, 0, 0, 1);
   display: block;
   padding: 20px 16px;
 }
@@ -402,20 +401,20 @@ img {
 }
 
 .housing {
-  background-image: url("../image/decor/Icon-home.svg");
+  background-image: url("../image/decor/icon-home.svg");
   background-color: rgb(131 179 211 / 12%);
   background-repeat: no-repeat;
   background-position: left 163px top 79px;
 }
 
 .food {
-  background-image: url("../image/decor/Icon-food.svg");
+  background-image: url("../image/decor/icon-food.svg");
   background-repeat: no-repeat;
   background-position: left 163px top 80px;
 }
 
 .souvenirs {
-  background-image: url("../image/decor/Icon-souvenir.svg");
+  background-image: url("../image/decor/icon-souvenir.svg");
   background-color: rgb(131 179 211 / 12%);
   background-repeat: no-repeat;
   background-position: left 169px top 77px;
@@ -455,7 +454,7 @@ img {
   font-size: 22px;
   line-height: 26px;
   margin: 0;
-  margin-bottom: 54px;
+  margin-bottom: 55px;
 }
 
 .search-button {
@@ -491,7 +490,7 @@ img {
 
 .subscribe-bg {
   background: no-repeat url("../image/background/subscribe.jpg");
-  background-color: rgb(130 179 211);
+  background-color: #756157;
   color: rgb(255 255 255);
   background-size: cover;
 }
@@ -1203,9 +1202,8 @@ img {
 
 .page-footer {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 20px 70px 10px;
+  padding: 45px 70px 35px;
 }
 
 .footer-social {
@@ -1215,14 +1213,17 @@ img {
   margin: 0;
   padding: 0;
   max-width: 150px;
+  align-self: start;
 }
 
 .footer-phone {
-  padding: 25px 15px;
+  display: flex;
+  flex-wrap: wrap;
   color: rgb(0, 0, 0);
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
+  max-width: 361px;
 }
 
 .footer-phone:hover {
@@ -1239,9 +1240,7 @@ img {
 
 .footer-developer {
   display: block;
-  padding: 25px 0;
-  justify-self: end;
-  border-radius: 10px;
+  padding-top: 3px;
 }
 
 .footer-developer:hover {
