@@ -54,7 +54,7 @@ img {
   font-size: 18px;
   font-weight: 400;
   color: #333333;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
@@ -96,7 +96,7 @@ img {
 }
 
 .button:active {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #68a3ca;
 }
 
@@ -339,7 +339,7 @@ img {
 }
 
 .advantages-description {
-  padding: 69px 274px 68px;
+  padding: 69px 270px 68px;
 }
 
 .hero-title {
